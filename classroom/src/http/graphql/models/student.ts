@@ -7,5 +7,5 @@ export class Student {
   id: string;
 
   @Field(() => [Enrollment])
-  enrollments: Enrollment[];
+  enrollments: Promise<Enrollment[]>;
 }
