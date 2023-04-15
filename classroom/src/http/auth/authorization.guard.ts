@@ -36,7 +36,7 @@ export class AuthorizationGuard implements CanActivate {
         algorithms: ['RS256'],
       }),
     );
-    console.log(checkJWT);
+
     try {
       await checkJWT(req, res);
 
